@@ -1,0 +1,54 @@
+{
+  "name": "@directasia/api-tester",
+  "version": "1.9.0",
+  "description": "API tester cli",
+  "bin": {
+    "api-tester": "./bin/api-tester.js"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "test": "node ./bin/api-tester.js --testFiles=./example/test/*.test.ts --parallel"
+  },
+  "publishConfig": {
+    "registry": "https://pkgs.dev.azure.com/directasia/_packaging/directasia/npm/registry/ "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://directasia@dev.azure.com/directasia/Core%20Modules/_git/api-tester"
+  },
+  "keywords": [],
+  "files": [
+    "lib/**/*"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "eslint": "^7.22.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^5.0.0",
+    "typescript": "^3.9.3",
+    "yargs": "^16.2.0",
+    "ts-node": "^8.10.1",
+    "axios": "^0.21.3",
+    "chai": "^4.2.0",
+    "chai-json-schema": "^1.5.1",
+    "uuid": "^8.3.2",
+    "form-data": "^4.0.0",
+    "luxon": "^2.0.2",
+    "jsonpath-plus": "^6.0.1",
+    "xml-js": "^1.6.11",
+    "@testdeck/mocha": "^0.1.2",
+    "@types/axios": "^0.14.0",
+    "@types/chai": "^4.2.11",
+    "@types/chai-json-schema": "^1.4.6",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.0.5",
+    "@types/uuid": "^8.3.0",
+    "@types/luxon": "^2.0.4",
+    "@types/jsonpath-plus": "^5.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+example
+mochawesome-report
+src
+tsconfig.json
+tslint.json
+.prettierrc
